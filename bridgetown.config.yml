@@ -15,14 +15,24 @@
 # https://learnxinyminutes.com/docs/yaml/
 #
 
-baseurl: "/webpacker-docs-proxy" # OPTIONAL: the subpath of your site, e.g. /blog
+baseurl: "" # OPTIONAL: the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. https://example.com
 
 permalink: pretty
 
+# collections:
+#   docs:
+#     output: true
+
+
+# collections_dir:
+#   docs
+
 # timezone: America/Los_Angeles
-
-
-collections:
-  docs:
-    output: true
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    default_lang: html
+    css_class   : 'syntax'

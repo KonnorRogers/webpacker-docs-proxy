@@ -1,15 +1,118 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   font-family: sans-serif;
 }
 
 h1, nav, footer {
-  text-align: center;
+  @apply text-center;
+}
+
+
+/* inline code highlights */
+
+code:not([class~="language-"]) {
+  @apply text-purple-500;
+  background: hsla(0,0,0,0.03);
+  padding: 0.15rem;
+}
+
+a,
+a > code,
+a > * > code {
+  @apply text-blue-600;
+}
+
+a:hover, a:focus,
+a > code:hover, a > code:focus,
+a > * > code:hover, a > * > code:focus {
+  @apply text-blue-700 underline;
+}
+
+/* Code block */
+pre {
+  @apply p-6 overflow-x-auto my-6;
+}
+
+code > span {
+  @apply leading-6;
 }
 
 main {
-  margin: 4rem auto;
-  max-width: 60rem;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+img {
+  display: inline-block;
+  margin: 0.2rem;
+}
+
+
+h1,h2,h3,h4 {
+  font-weight: bold;
+}
+
+h1,h2 {
+  border-bottom: 1px solid hsla(0,0,0,0.05);
+  margin: 1rem 2rem;
+}
+
+h3,h4 {
+  margin: 0.5rem 1rem;
+}
+
+h1 {
+  font-size: 1.85rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.65rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+ul {
+  list-style: disc inside;
+}
+
+ul ul {
+  list-style: circle inside;
+}
+
+ul ul ul {
+  list-style: square inside;
+}
+
+ul ul ul ul {
+  list-style: disc inside;
+}
+
+ul > li {
+  padding-left: 1rem;
+}
+
+@screen sm {
+  pre {
+    @apply overflow-x-hidden;
+  }
+
+  main {
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 48rem;
+  }
 }

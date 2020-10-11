@@ -2,5 +2,4 @@
 layout: "doc"
 ---
 
-placeholder
-
+{{ content }}
