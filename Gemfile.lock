@@ -42,6 +42,7 @@ GEM
       bridgetown-core (= 0.17.1)
     colorator (1.1.0)
     concurrent-ruby (1.1.7)
+    dotenv (2.7.6)
     erubi (1.9.0)
     faraday (1.0.1)
       multipart-post (>= 1.2, < 3)
@@ -102,6 +103,7 @@ PLATFORMS
 
 DEPENDENCIES
   bridgetown (~> 0.17.1)
+  dotenv (~> 2.7)
   graphtown (~> 1.0)
 
 BUNDLED WITH

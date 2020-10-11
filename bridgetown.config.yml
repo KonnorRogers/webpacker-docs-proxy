@@ -22,7 +22,6 @@ permalink: pretty
 
 # timezone: America/Los_Angeles
 
-graphql_endpoint: https://api.github.com/graphql
 
 collections:
   docs:
