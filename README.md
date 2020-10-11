@@ -13,6 +13,7 @@ Create a `.env` file and add an `GITHUB_API_TOKEN` variable.
 ```bash
 # .env
 
+GITHUB_USER="myusername"
 GITHUB_API_TOKEN="1234"
 ```
 
