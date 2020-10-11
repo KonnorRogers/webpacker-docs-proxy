@@ -1,12 +1,7 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
-$body-background: #fafafa;
-$body-color: #444;
-
 body {
-  background: $body-background;
-  color: $body-color;
   font-family: sans-serif;
 }
 

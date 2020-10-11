@@ -5,3 +5,11 @@ layout: home
 ---
 
 Welcome to Bridgetown!
+
+{% for doc in site.docs %}
+  <h2>
+    <a href="{{ doc.permalink }}">
+      doc.permalink
+    </a>
+  </h2>
+{% endfor %}

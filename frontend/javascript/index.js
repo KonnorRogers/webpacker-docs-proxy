@@ -1,4 +1,4 @@
-import "../styles/index.scss"
+import "../styles/index.css"
 import { Application } from "stimulus"
 import { definitionsFromContext } from "stimulus/webpack-helpers"
 import Turbolinks from "turbolinks"
