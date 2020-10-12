@@ -5,14 +5,10 @@
   </head>
   <body class="{{ page.layout }} {{ page.page_class }}">
     {% render "github_icon", github_url: page.github_url %}
-    <nav class="flex flex-col">
-      {% render "nav_items", styles: "text-gray-700", collection: site.collections.docs %}
-    </nav>
-
-    {{ page.collection.name }}
-    {% for doc in site.docs %}
-      {{ doc }}
+    {% for doc in site.collections.docs.docs %}
+      {{ doc.url }}
     {% endfor %}
+
     <main data-controller="header-link document-link">
       {{ content }}
     </main>
