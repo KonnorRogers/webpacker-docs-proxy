@@ -44,6 +44,15 @@ code > span {
   color: azure;
 }
 
+.syntax > code {
+  padding: 0;
+  color: azure;
+}
+
+.syntax {
+  margin-bottom: 3rem;
+}
+
 main {
   padding: 0.2rem 1rem;
   margin: 0 1rem;
@@ -75,6 +84,7 @@ h1 {
 h2 {
   font-size: 1.45rem;
   margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 h3 {
@@ -88,8 +98,11 @@ h4 {
 }
 
 p {
-  font-size: 1.15rem;
   margin: 1rem 0;
+}
+
+p, li {
+  font-size: 1.15rem;
 }
 
 ul {

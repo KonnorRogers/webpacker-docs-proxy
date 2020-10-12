@@ -1,0 +1,12 @@
+---
+variables:
+  collection: [Array, "A collection to be iterated through"]
+  styles: [String, "class styles"]
+---
+
+{%- for item in collection -%}
+  <a href="{{ item.url }}" class="{{ styles }}">
+    {{ item.name }}
+  </a>
+{%- endfor -%}
+
