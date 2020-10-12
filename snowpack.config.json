@@ -14,8 +14,7 @@
         "input": [".css"],
         "output": [".css"]
       }
-    ],
-    "@snowpack/plugin-babel"
+    ]
   ],
   "installOptions": { "NODE_ENV": true },
   "devOptions": {

@@ -28,7 +28,7 @@ class WebpackerDocs < SiteBuilder
       get(page["url"]) do |file|
         return if file["content"].nil?
 
-        body = Base64.decode64(file["content"]).force_encoding("ISO-8859-1")
+        body = Base64.decode64(file["content"]).force_encoding("UTF-8")
       end
 
       doc "index.md" do
@@ -52,7 +52,7 @@ class WebpackerDocs < SiteBuilder
         get(page["url"]) do |file|
           next if file["content"].nil?
 
-          body = Base64.decode64(file["content"]).force_encoding("ISO-8859-1")
+          body = Base64.decode64(file["content"]).force_encoding("UTF-8")
         end
 
         doc "#{page_slug}" do

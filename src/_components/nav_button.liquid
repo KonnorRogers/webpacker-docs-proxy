@@ -1,0 +1,52 @@
+<div
+  data-controller="nav-button"
+  role="region"
+  aria-labelledby="nav-button"
+  class="relative"
+>
+  <button
+    data-action="nav-button#toggle"
+    data-testid="nav-button"
+    id="nav-button"
+    aria-label="nav-button"
+    class="fixed bottom-0 right-0 z-20 w-16 h-16 mx-6 mb-20 bg-gray-900 border-4 border-transparent border-solid rounded-full outline-none focus:border-teal-400 hover:border-teal-400 sm:hidden"
+  >
+    <div
+      data-rotation="0"
+      data-target="nav-button.iconShow"
+      class="relative opacity-100 transition duration-500 ease-in origin-center"
+      style="top: 0.65rem;"
+    >
+      <i class="text-4xl text-green-300 fas fa-sort"></i>
+    </div>
+
+    <div
+      data-rotation="0"
+      data-target="nav-button.iconHide"
+      class="relative opacity-0 transition duration-500 ease-in origin-center"
+      style="bottom: 1.35rem;"
+    >
+      <i class="text-2xl font-bold text-green-300 fas fa-times"></i>
+    </div>
+  </button>
+
+  <div
+    class="fixed top-0 right-0 z-10 items-center justify-center hidden w-screen h-screen sm:hidden"
+    data-target="nav-button.wrapper"
+  >
+    <button
+      class="w-screen h-screen bg-black shadow-2xl opacity-75"
+      data-action="nav-button#toggle"
+      ><span class="sr-only">Close navigation</button>
+    <div tabindex="0"></div>
+    <div
+      class="absolute flex flex-col justify-center max-w-xs bg-gray-300 rounded-lg shadow-2xl w-75"
+      id="nav-button-content"
+      role="nav-button-content"
+      aria-modal="true"
+      data-testid="nav-button-content"
+      data-target="nav-button.content"
+    >
+    </div>
+  </div>
+</div>
