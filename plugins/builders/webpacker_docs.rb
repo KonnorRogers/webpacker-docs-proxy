@@ -1,9 +1,6 @@
 require "base64"
 class WebpackerDocs < SiteBuilder
-
   def connection(headers: {}, parse_json: true)
-    require "dotenv"
-    Dotenv.load(".env")
     retry_options = {
       max: 2,
       interval: 0.05,
@@ -29,6 +26,8 @@ class WebpackerDocs < SiteBuilder
 
       body = nil
       get(page["url"]) do |file|
+        return if file["content"].nil?
+
         body = Base64.decode64(file["content"]).force_encoding("ISO-8859-1")
       end
 
@@ -51,16 +50,17 @@ class WebpackerDocs < SiteBuilder
 
         body = nil
         get(page["url"]) do |file|
+          next if file["content"].nil?
+
           body = Base64.decode64(file["content"]).force_encoding("ISO-8859-1")
         end
 
-        doc "#{slug}" do
+        puts slug
+        doc "docs/#{slug}" do
           layout "doc"
-          date Time.new
           title page_title
           github_url git_url
           content body
-          permalink slug
         end
       end
     end

@@ -4,7 +4,8 @@ module.exports = {
     purgeLayersByDefault: true
   },
   purge: {
-    mode: "production",
+    layers: ["all"],
+    mode: "layers",
     content: ["./output/**/*.html"],
   },
   theme: {

@@ -25,7 +25,8 @@
   },
   "buildOptions": {
     "baseUrl": "/",
-    "metaDir": ""
+    "metaDir": "",
+    "bundle": false
   },
   "mount": { "frontend": "/_frontend_", "output": "/" }
 }
