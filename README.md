@@ -13,14 +13,14 @@ Create a `.env` file and add an `GITHUB_API_TOKEN` variable.
 ```bash
 # .env
 
-GITHUB_USER="myusername"
-GITHUB_API_TOKEN="1234"
+export GITHUB_USER="myusername"
+export GITHUB_API_TOKEN="1234"
 ```
 
 Finally run:
 
 ```bash
-yarn start
+source .env && yarn start
 ```
 
 and then navigate to `localhost:4000` to view your site.

@@ -1,12 +1,8 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 body {
   font-family: sans-serif;
 }
 
-h1, nav, footer {
+h1, footer {
   @apply text-center;
 }
 
@@ -14,9 +10,9 @@ h1, nav, footer {
 /* inline code highlights */
 
 code:not([class~="language-"]) {
-  @apply text-purple-500;
-  background: hsla(0,0,0,0.03);
-  padding: 0.15rem;
+  @apply text-purple-600 rounded-md;
+  background: rgba(0,0,0,0.04);
+  padding: 0.25rem 0.5rem;
 }
 
 a,
@@ -40,14 +36,22 @@ code > span {
   @apply leading-6;
 }
 
+.highlight {
+  @apply shadow-md rounded-lg;
+}
+
+.syntax > code {
+  color: azure;
+}
+
 main {
-  padding: 1rem;
-  margin: 1rem;
+  padding: 0.2rem 1rem;
+  margin: 0 1rem;
 }
 
 img {
   display: inline-block;
-  margin: 0.2rem;
+  margin: 0.2rem2;
 }
 
 
@@ -56,8 +60,8 @@ h1,h2,h3,h4 {
 }
 
 h1,h2 {
-  border-bottom: 1px solid hsla(0,0,0,0.05);
-  margin: 1rem 2rem;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  padding: 1rem;
 }
 
 h3,h4 {
@@ -65,23 +69,26 @@ h3,h4 {
 }
 
 h1 {
-  font-size: 1.85rem;
-  text-align: center;
+  font-size: 2.5rem;
 }
 
 h2 {
-  font-size: 1.65rem;
+  font-size: 1.45rem;
+  margin-top: 2rem;
 }
 
 h3 {
-  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  font-size: 1.35rem;
 }
 
 h4 {
+  margin-top: 1.25rem;
   font-size: 1.25rem;
 }
 
 p {
+  font-size: 1.15rem;
   margin: 1rem 0;
 }
 
@@ -111,8 +118,12 @@ ul > li {
   }
 
   main {
-    padding: 2rem;
-    margin: 2rem auto;
     max-width: 48rem;
+  }
+}
+
+@screen md {
+  main {
+    margin: 0 auto;
   }
 }

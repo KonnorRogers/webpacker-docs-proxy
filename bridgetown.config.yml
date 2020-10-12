@@ -20,19 +20,21 @@ url: "" # the base hostname & protocol for your site, e.g. https://example.com
 
 permalink: none
 
-# collections:
-#   docs:
-#     output: true
-
-
-# collections_dir:
-#   docs
+collections:
+  docs:
+    output: true
 
 # timezone: America/Los_Angeles
 markdown: kramdown
-highlighter: rouge
 kramdown:
+  syntax_highlighter: rouge
+  auto_ids: true
+  toc_levels: 1..3
   input: GFM
   syntax_highlighter_opts:
     default_lang: html
-    css_class   : 'syntax'
+    guess_lang: html
+    css_class: 'syntax'
+  html_to_native: true
+  parse_block_html: true
+  parse_span_html: true
