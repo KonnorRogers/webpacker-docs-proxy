@@ -963,10 +963,10 @@
     "@babel/core" "^7.10.5"
     workerpool "^6.0.0"
 
-"@snowpack/plugin-build-script@^2.0.8":
-  version "2.0.8"
-  resolved "https://registry.yarnpkg.com/@snowpack/plugin-build-script/-/plugin-build-script-2.0.8.tgz#fcec132248724ff0a5239bb8501b4df207cb5c1b"
-  integrity sha512-ehYC43yoSuzisnhIA8IYLtc2i7NDeuAtRuLFD650uB8i0Ibtx6R5x9rM54JuPpxiCjPL2g04000yHFxMiCeEVA==
+"@snowpack/plugin-build-script@^2.0.9":
+  version "2.0.9"
+  resolved "https://registry.yarnpkg.com/@snowpack/plugin-build-script/-/plugin-build-script-2.0.9.tgz#c97e421a53c895e39a6cd57864647d58cccbd87f"
+  integrity sha512-y9f/q6QfbnaKmTMGAW9b42RcOYCXTcJhCgr/kgKIS7nHCYAXnuVUHonMVMkrYn8GMKnFNZSOFmV7brOLLN3rPQ==
   dependencies:
     execa "^4.0.3"
     npm-run-path "^4.0.1"
@@ -1228,9 +1228,9 @@ camelcase@^5.0.0:
   integrity sha512-L28STB170nwWS63UjtlEOE3dldQApaJXZkOI1uMFfzf3rRuPegHaHesyee+YxQ+W6SvRDQV6UrdOdRiR153wJg==
 
 caniuse-lite@^1.0.30001109, caniuse-lite@^1.0.30001135:
-  version "1.0.30001147"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001147.tgz#84d27e5b691a8da66e16887b34c78dacf3935f00"
-  integrity sha512-CPyN875geYk46eIqPl5jlmotCr5YZC2KxIVfb4z0FrNfLxPM+MyodWD2irJGDG8vUUE1fmg3De9vt8uaC6Nf6w==
+  version "1.0.30001148"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001148.tgz#dc97c7ed918ab33bf8706ddd5e387287e015d637"
+  integrity sha512-E66qcd0KMKZHNJQt9hiLZGE3J4zuTqE1OnU53miEVtylFbwOEmeA5OsRu90noZful+XGSQOni1aT2tiqu/9yYw==
 
 chalk@^1.1.3:
   version "1.1.3"
@@ -1280,10 +1280,10 @@ chownr@^2.0.0:
   resolved "https://registry.yarnpkg.com/chownr/-/chownr-2.0.0.tgz#15bfbe53d2eab4cf70f18a8cd68ebe5b3cb1dece"
   integrity sha512-bIomtDF5KGpdogkLd9VspvFzk9KfpyyGlS8YFVZl7TGPBHL5snIOnxeshwVgPteQ9b4Eydl+pVbIyE1DcvCWgQ==
 
-cjs-module-lexer@^0.3.3:
-  version "0.3.3"
-  resolved "https://registry.yarnpkg.com/cjs-module-lexer/-/cjs-module-lexer-0.3.3.tgz#40b863443a2ad8aa8d70b10afd65b7aba93a3a08"
-  integrity sha512-gfhBYtBojuFFdenh8qN1IAlfuMVYPT2m1d9oYV27PgQbuNn79ixoBE3a4SkJds6iaIKYmnVT/UAifV13og2DaQ==
+cjs-module-lexer@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/cjs-module-lexer/-/cjs-module-lexer-0.4.0.tgz#c0369ade083b167d89fb1ce9bd7222277d879952"
+  integrity sha512-os3xuSZ0e9YzM+d9KIKh+gE+redb52kWzZuzNqCTc3rtpXA7gdVNRPkDiOnVcuGQMWiABGtWXkl1gCweG0Jmsw==
 
 clean-stack@^2.0.0:
   version "2.2.0"
@@ -1583,10 +1583,10 @@ es-to-primitive@^1.2.1:
     is-date-object "^1.0.1"
     is-symbol "^1.0.2"
 
-esbuild@^0.6.28:
-  version "0.6.34"
-  resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.6.34.tgz#76565a60e006f45d5f273b6e59e61ed0816551f5"
-  integrity sha512-InRdL/Q96pUucPqovJzvuLhquZr6jOn81FDVwFjCKz1rYKIm9OdOC+7Fs4vr6x48vKBl5LzKgtjU39BUpO636A==
+esbuild@^0.7.0:
+  version "0.7.14"
+  resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.7.14.tgz#9de555e75669187c2315317fbf489b229b1a4cbb"
+  integrity sha512-w2CEVeRcUhCGYMHnNNwb8q+9w42scL7RcNzJm85gZVzNBE3AF0sLq5YP/IdaTBJIFBphIKG3bGbwRH+zsgH/ig==
 
 escalade@^3.0.2, escalade@^3.1.0:
   version "3.1.0"
@@ -1598,10 +1598,10 @@ escape-string-regexp@^1.0.2, escape-string-regexp@^1.0.5:
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
   integrity sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
 
-esinstall@^0.3.2:
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/esinstall/-/esinstall-0.3.2.tgz#1a79bee47dff49b5f6d12c1d98a08baf068ff1f3"
-  integrity sha512-SlCAwKOzBNz+yk+s3FZixzMGZocwcebP7yWUWUd51HweSOzDAGysLBqkir9/gZxj6ReEjqnJjlee0hUpy+Q06A==
+esinstall@^0.3.3:
+  version "0.3.3"
+  resolved "https://registry.yarnpkg.com/esinstall/-/esinstall-0.3.3.tgz#d43b4f62a6d5090fa2eaadea425c09a985c6c05f"
+  integrity sha512-FkC0fGn7GJPxWS58YvAdXkALCv2WFV6xnWHMVYXIupO0QvRUkaKx6bRCb6Kq+KuaFvmgTgFGp4zzAWljgD9tuQ==
   dependencies:
     "@rollup/plugin-alias" "^3.0.1"
     "@rollup/plugin-commonjs" "^15.0.0"
@@ -1609,7 +1609,7 @@ esinstall@^0.3.2:
     "@rollup/plugin-json" "^4.0.0"
     "@rollup/plugin-node-resolve" "^9.0.0"
     "@rollup/plugin-replace" "^2.3.3"
-    cjs-module-lexer "^0.3.3"
+    cjs-module-lexer "^0.4.0"
     es-module-lexer "^0.3.24"
     is-builtin-module "^3.0.0"
     kleur "^4.1.1"
@@ -1704,12 +1704,20 @@ find-cache-dir@^3.3.1:
     make-dir "^3.0.2"
     pkg-dir "^4.1.0"
 
-find-up@^4.0.0, find-up@^4.1.0:
+find-up@^4.0.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/find-up/-/find-up-4.1.0.tgz#97afe7d6cdc0bc5928584b7c8d7b16e8a9aa5d19"
   integrity sha512-PpOwAdQ/YlXQ2vj8a3h8IipDuYRi3wceVQQGYWxNINccq40Anw7BlsEXCMbt1Zt+OLA6Fq9suIpIWD0OsnISlw==
   dependencies:
     locate-path "^5.0.0"
+    path-exists "^4.0.0"
+
+find-up@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/find-up/-/find-up-5.0.0.tgz#4c92819ecb7083561e4f4a240a86be5198f536fc"
+  integrity sha512-78/PXT1wlLLDgTzDs7sjq9hzz0vXD+zn+7wypEe4fXQxCmdmqfGsEPQxmiCSQI3ajFV91bVSsvNtrJRiW6nGng==
+  dependencies:
+    locate-path "^6.0.0"
     path-exists "^4.0.0"
 
 follow-redirects@^1.0.0:
@@ -2169,6 +2177,13 @@ locate-path@^5.0.0:
   dependencies:
     p-locate "^4.1.0"
 
+locate-path@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/locate-path/-/locate-path-6.0.0.tgz#55321eb309febbc59c4801d931a72452a681d286"
+  integrity sha512-iPZK6eYjbxRu3uB4/WZ3EsEIMJFMqAoopl3R+zuq0UjcAm/MO6KCweDgPfP3elTztoKP3KtnVHxTn2NHBSDVUw==
+  dependencies:
+    p-locate "^5.0.0"
+
 lodash.difference@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.difference/-/lodash.difference-4.5.0.tgz#9ccb4e505d486b91651345772885a2df27fd017c"
@@ -2450,12 +2465,26 @@ p-limit@^2.2.0:
   dependencies:
     p-try "^2.0.0"
 
+p-limit@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/p-limit/-/p-limit-3.0.2.tgz#1664e010af3cadc681baafd3e2a437be7b0fb5fe"
+  integrity sha512-iwqZSOoWIW+Ew4kAGUlN16J4M7OB3ysMLSZtnhmqx7njIHFPlxWBX8xo3lVTyFVq6mI/lL9qt2IsN1sHwaxJkg==
+  dependencies:
+    p-try "^2.0.0"
+
 p-locate@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/p-locate/-/p-locate-4.1.0.tgz#a3428bb7088b3a60292f66919278b7c297ad4f07"
   integrity sha512-R79ZZ/0wAxKGu3oYMlz8jy/kbhsNrS7SKZ7PxEHBgJ5+F2mtFW2fK2cOtBh1cHYkQsbzFV7I+EoRKe6Yt0oK7A==
   dependencies:
     p-limit "^2.2.0"
+
+p-locate@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/p-locate/-/p-locate-5.0.0.tgz#83c8315c6785005e3bd021839411c9e110e6d834"
+  integrity sha512-LaNjtRWUBY++zB5nE/NwcaoMylSPk+S+ZHNB1TzdbMJMny6dynpAGt7X/tl/QYq3TIeE6nxHppbo2LGymrG5Pw==
+  dependencies:
+    p-limit "^3.0.2"
 
 p-map@^4.0.0:
   version "4.0.0"
@@ -2947,12 +2976,12 @@ slash@^3.0.0:
   resolved "https://registry.yarnpkg.com/slash/-/slash-3.0.0.tgz#6539be870c165adbd5240220dbe361f1bc4d4634"
   integrity sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==
 
-snowpack@^2.13.3:
-  version "2.13.3"
-  resolved "https://registry.yarnpkg.com/snowpack/-/snowpack-2.13.3.tgz#010f73b6dd51b93d3c7d34026747878583fb4f5d"
-  integrity sha512-Xq/rRsCMXtwRDAoFinBV5ZWnb7LayFnVdQQLWxE+DexovRv5TwL0ehvGdAuf8p1tiBAqvylwDUtFxZA1usX0RA==
+snowpack@^2.14.0:
+  version "2.14.0"
+  resolved "https://registry.yarnpkg.com/snowpack/-/snowpack-2.14.0.tgz#b4dcf2712b8afd0ffce8e1fb2c1b5468ecde7a42"
+  integrity sha512-zYCJdqGBpOQJzid9DsNWVQOliCXOS/2bMpfRLC0iMMqRBDVdZ+wt4q0aGBQVBJd54fG3bxnhfVAcR63qgzCz1w==
   dependencies:
-    "@snowpack/plugin-build-script" "^2.0.8"
+    "@snowpack/plugin-build-script" "^2.0.9"
     "@snowpack/plugin-run-script" "^2.1.5"
     cacache "^15.0.0"
     cachedir "^2.3.0"
@@ -2963,12 +2992,12 @@ snowpack@^2.13.3:
     deepmerge "^4.2.2"
     detect-port "^1.3.0"
     es-module-lexer "^0.3.24"
-    esbuild "^0.6.28"
-    esinstall "^0.3.2"
+    esbuild "^0.7.0"
+    esinstall "^0.3.3"
     etag "^1.8.1"
     execa "^4.0.3"
     find-cache-dir "^3.3.1"
-    find-up "^4.1.0"
+    find-up "^5.0.0"
     glob "^7.1.4"
     http-proxy "^1.18.1"
     httpie "^1.1.2"
@@ -3107,10 +3136,10 @@ supports-color@^7.1.0:
   dependencies:
     has-flag "^4.0.0"
 
-tailwindcss@^1.8.13:
-  version "1.8.13"
-  resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-1.8.13.tgz#ee57050a516d342bafc92cb74b4de6f92e44c189"
-  integrity sha512-z3R/6qPqfjauSR4qHhlA8I0OnfSyuotvigXISq666k+V52VSs5HV//KZ0Xe3qrZ4h5Um4OG5g+lcgjXSfURjDw==
+tailwindcss@^1.9.0:
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-1.9.0.tgz#19caaca94656e2d5f038fa46e754d91e152e9609"
+  integrity sha512-RJJ7SRtmm1jBXzOm5It50NAX76251yW+XWISb2Y+kxgqwcCHq4RDor7elzeUChl/dIFvUMDsHb7LfiGtLs3qtg==
   dependencies:
     "@fullhuman/postcss-purgecss" "^2.1.2"
     autoprefixer "^9.4.5"

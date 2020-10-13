@@ -1,12 +1,10 @@
----
-variables:
-  collection: [Array, "A collection to be iterated through"]
-  styles: [String, "class styles"]
----
-
-{%- for item in collection -%}
-  <a href="{{ item.url }}" class="{{ styles }}">
-    {{ item.name }}
-  </a>
-{%- endfor -%}
+<ul class="flex flex-col list-none">
+  {% for gh_doc in gh_docs %}
+    <li class="p-2">
+      <a href="{{ gh_doc.url }}">
+        {{ gh_doc.slug }}
+      </a>
+    </li>
+  {% endfor %}
+</ul>
 

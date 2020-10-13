@@ -40,13 +40,14 @@
       ><span class="sr-only">Close navigation</button>
     <div tabindex="0"></div>
     <div
-      class="absolute flex flex-col justify-center max-w-xs bg-gray-300 rounded-lg shadow-2xl w-75"
+      class="mt-8 mb-4 mx-auto flex z-10 flex-col justify-center min-h-full bg-gray-300 rounded-lg shadow-2xl w-screen"
       id="nav-button-content"
       role="nav-button-content"
       aria-modal="true"
       data-testid="nav-button-content"
       data-target="nav-button.content"
     >
+      {% render "nav_items", gh_docs: gh_docs %}
     </div>
   </div>
 </div>

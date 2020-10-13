@@ -21,9 +21,9 @@ url: "" # the base hostname & protocol for your site, e.g. https://example.com
 permalink: none
 
 collections:
-  docs:
+  gh_docs:
+    permalink: /docs/:title
     output: true
-
 
 # timezone: America/Los_Angeles
 markdown: kramdown

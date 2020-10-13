@@ -19,9 +19,9 @@
     "postcss-cli": "^8.1.0",
     "postcss-import": "^12.0.1",
     "prismjs": "^1.22.0",
-    "snowpack": "^2.13.3",
+    "snowpack": "^2.14.0",
     "stimulus": "^1.0.1",
-    "tailwindcss": "^1.8.13",
+    "tailwindcss": "^1.9.0",
     "turbolinks": "^5.2.0"
   }
 }

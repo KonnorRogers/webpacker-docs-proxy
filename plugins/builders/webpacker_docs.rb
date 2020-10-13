@@ -45,7 +45,6 @@ class WebpackerDocs < SiteBuilder
         # next if page["type"]&.to_sym != :file
 
         page_title = page["name"]
-        page_slug = page_title
         git_url = page["html_url"]
 
         body = nil
@@ -55,13 +54,12 @@ class WebpackerDocs < SiteBuilder
           body = Base64.decode64(file["content"]).force_encoding("UTF-8")
         end
 
-        doc "#{page_slug}" do
+        doc page_title do
           layout "doc"
-          collection "docs"
+          collection "gh_docs"
           title page_title
           github_url git_url
           content body
-          slug page_slug
         end
       end
     end
