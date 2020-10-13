@@ -17,7 +17,7 @@ export default class extends Controller {
        return
      }
      
-     if (!anchor.href.startsWith(window.location.origin) {
+     if (!anchor.href.startsWith(window.location.origin)) {
        anchor.rel = "nofollow noopener noreferrer"
        anchor.target = "_blank"
        return
