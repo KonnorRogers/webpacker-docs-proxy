@@ -6,14 +6,13 @@
   <body class="{{ page.layout }} {{ page.page_class }}">
     {% render "github_icon", github_url: page.github_url %}
 
-    <div class="flex">
+    <div class="lg:flex">
       <nav class="hidden lg:flex rounded-lg lg:w-1/6 mx-8 mt-8 border-solid border border-gray-500">
         {% render "nav_items", gh_docs: site.gh_docs %}
       </nav>
 
       <main data-controller="header-link document-link">
         {{ content }}
-
       </main>
     </div>
 
