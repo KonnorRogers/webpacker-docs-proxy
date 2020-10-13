@@ -2,11 +2,11 @@ import { Controller } from "stimulus"
 
 export default class extends Controller {
   connect() {
-    document.addEventListener("turbolinks:before-cache", this.fixDocumentLinks)
+    document.addEventListener("turbolinks:render", this.fixDocumentLinks)
   }
 
   disconnect() {
-    document.removeEventListener("turbolinks:before-cache", this.fixDocumentLinks)
+    document.removeEventListener("turbolinks:render", this.fixDocumentLinks)
   }
 
  fixDocumentLinks() {
