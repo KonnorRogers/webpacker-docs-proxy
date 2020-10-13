@@ -1,6 +1,8 @@
-import "../styles/tailwind.css"
-import "../styles/dracula.css"
-import "../styles/index.css"
+if (process.env.NODE_ENV === "development") {
+  import("../styles/tailwind.css")
+  import("../styles/dracula.css")
+  import("../styles/index.css")
+}
 import Turbolinks from "turbolinks"
 import { Application } from "stimulus"
 import NavButtonController from "./controllers/nav_button_controller.js";
