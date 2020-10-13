@@ -2,11 +2,11 @@ import { Controller } from "stimulus"
 
 export default class extends Controller {
   connect() {
-    document.addEventListener("turbolinks:load", this.fixDocumentLinks)
+    document.addEventListener("turbolinks:before-cache", this.fixDocumentLinks)
   }
 
   disconnect() {
-    document.removeEventListener("turbolinks:load", this.fixDocumentLinks)
+    document.removeEventListener("turbolinks:before-cache", this.fixDocumentLinks)
   }
 
  fixDocumentLinks() {
@@ -16,9 +16,12 @@ export default class extends Controller {
      if (anchor.href.startsWith("#")) {
        return
      }
-
-     anchor.rel = "nofollow noopener noreferrer"
-     anchor.target = "_blank"
+     
+     if (!anchor.href.startsWith(window.location.origin) {
+       anchor.rel = "nofollow noopener noreferrer"
+       anchor.target = "_blank"
+       return
+     }
 
      if (anchor.href.startsWith(window.location.origin) && anchor.href.endsWith(".md")) {
         return anchor.href = anchor.href.replace(/\.md$/, "")
