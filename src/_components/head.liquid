@@ -3,7 +3,7 @@
 {% capture page_title %}{{ title | strip_html | strip_newlines }}{% endcapture %}
 <title>{% if page_title != "" %}{{ page_title | escape }} | {{ metadata.title | escape }}{% else %}{{ metadata.title | escape }}: {{ metadata.tagline | escape }}{% endif %}</title>
 
-{% if bridgetown.environment != "development" %}
+{% if bridgetown.environment == "development" %}
   <link href="http://localhost:4002/styles/tailwind.css" rel="stylesheet" data-turbolinks-track="reload">
   <link href="http://localhost:4002/styles/dracula.css" rel="stylesheet" data-turbolinks-track="reload">
   <link href="http://localhost:4002/styles/index.css" rel="stylesheet" data-turbolinks-track="reload">
