@@ -1,12 +1,20 @@
-import { Controller } from "stimulus"
+import { Controller } from "stimulus";
 
 export default class extends Controller {
   connect() {
-    document.addEventListener("turbolinks:render", this.wrapHeaders.bind(this))
+    document.addEventListener("turbolinks:render", this.wrapHeaders.bind(this));
+    document.addEventListener("DOMContentLoaded", this.wrapHeaders.bind(this));
   }
 
   disconnect() {
-    document.removeEventListener("turbolinks:render", this.wrapHeaders.bind(this))
+    document.removeEventListener(
+      "turbolinks:render",
+      this.wrapHeaders.bind(this)
+    );
+    document.removeEventListener(
+      "DOMContentLoaded",
+      this.wrapHeaders.bind(this)
+    );
   }
 
   wrap(element, wrapper) {
@@ -14,14 +22,19 @@ export default class extends Controller {
     wrapper.appendChild(element);
   }
 
- wrapHeaders() {
-   const headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6")
+  wrapHeaders() {
+    const headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
 
-   headers.forEach((header) => {
-      const href = header.id
-      const anchor = document.createElement("a")
-      anchor.href = "#" + href
-      this.wrap(header, anchor)
-   })
+    headers.forEach((header) => {
+      // Return if its already wrapped
+      if (header.parentNode.nodeName.toLowerCase() === "a") {
+        return
+      }
+
+      const href = header.id;
+      const anchor = document.createElement("a");
+      anchor.href = "#" + href;
+      this.wrap(header, anchor);
+    });
   }
 }
