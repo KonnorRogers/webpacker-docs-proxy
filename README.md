@@ -1,4 +1,8 @@
-# Pulls down the docs from Webpacker
+# Purpose
+
+A more functional and navigatable Webpacker docs
+
+- Nightly builds pulling from the `doc/` repo of Webpacker
 
 ## Getting started
 
