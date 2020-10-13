@@ -13,6 +13,8 @@ export default class NavButtonController extends Controller {
   toggleContent() {
     const classes = ["flex", "hidden"];
     classes.forEach((klass) => this.wrapperTarget.classList.toggle(klass));
+    document.querySelector("main").classList.toggle("hidden")
+    document.querySelector("footer").classList.toggle("hidden")
   }
 
   toggleIcon() {

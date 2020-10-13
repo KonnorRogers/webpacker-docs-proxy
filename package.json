@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "BRIDGETOWN_ENV=production NODE_ENV=production snowpack build",
-    "start": "snowpack dev"
+    "build": "BRIDGETOWN_ENV=production NODE_ENV=production bundle exec bridgetown build && snowpack build",
+    "start": "snowpack dev & bundle exec bridgetown serve"
   },
   "devDependencies": {},
   "dependencies": {

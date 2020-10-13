@@ -2,7 +2,7 @@
   data-controller="nav-button"
   role="region"
   aria-labelledby="nav-button"
-  class="relative"
+  class="relative overflow-y-scroll"
 >
   <button
     data-action="nav-button#toggle"
@@ -31,16 +31,16 @@
   </button>
 
   <div
-    class="fixed top-0 right-0 z-10 items-center justify-center hidden w-screen h-screen lg:hidden"
+    class="relative hidden"
     data-target="nav-button.wrapper"
   >
     <button
-      class="w-screen h-screen bg-black shadow-2xl opacity-75"
+      class="fixed top-0 w-screen h-screen bg-black shadow-2xl opacity-75"
       data-action="nav-button#toggle"
       ><span class="sr-only">Close navigation</button>
     <div tabindex="0"></div>
     <div
-      class="mt-8 mb-4 mx-auto flex z-10 flex-col justify-center min-h-full bg-gray-300 rounded-lg shadow-2xl w-screen"
+      class="z-10 relative bg-gray-200 w-3/4 mx-auto mt-8 p-6 text-center"
       id="nav-button-content"
       role="nav-button-content"
       aria-modal="true"

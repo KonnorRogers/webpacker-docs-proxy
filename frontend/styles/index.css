@@ -9,22 +9,25 @@ h1, footer {
 
 /* inline code highlights */
 
-code:not([class~="language-"]) {
-  @apply text-purple-600 rounded-md;
-  background: rgba(0,0,0,0.04);
-  padding: 0.25rem 0.5rem;
-}
 
 a,
 a > code,
-a > * > code {
-  @apply text-blue-600;
+a > * > code,
+a > * > code[class*="language-"] {
+  /* Unable to distinguish identifier, this makes links obvious */
+  @apply text-blue-600 !important;
 }
 
 a:hover, a:focus,
 a > code:hover, a > code:focus,
-a > * > code:hover, a > * > code:focus {
-  @apply text-blue-700 underline;
+a > * > code:hover, a > * > code[class*="language-"]:focus {
+  @apply text-blue-700 underline !important;
+}
+
+code[class*="language-"] {
+  @apply text-purple-600 rounded-md;
+  background: rgba(0,0,0,0.04);
+  padding: 0.25rem 0.5rem;
 }
 
 /* Code block */
@@ -126,6 +129,10 @@ ul > li {
 }
 
 @screen sm {
+  nav {
+    height: fit-content;
+  }
+
   pre {
     @apply overflow-x-hidden;
   }
@@ -137,6 +144,6 @@ ul > li {
 
 @screen md {
   main {
-    margin: 0 auto;
+    @apply ml-4 mr-auto;
   }
 }

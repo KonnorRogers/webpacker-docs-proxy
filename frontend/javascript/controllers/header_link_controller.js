@@ -2,11 +2,11 @@ import { Controller } from "stimulus"
 
 export default class extends Controller {
   connect() {
-    document.addEventListener("turbolinks:visit", this.wrapHeaders.bind(this))
+    document.addEventListener("turbolinks:load", this.wrapHeaders.bind(this))
   }
 
   disconnect() {
-    document.removeEventListener("turbolinks:visit", this.wrapHeaders.bind(this))
+    document.removeEventListener("turbolinks:load", this.wrapHeaders.bind(this))
   }
 
   wrap(element, wrapper) {

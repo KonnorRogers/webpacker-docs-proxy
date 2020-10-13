@@ -2,13 +2,6 @@
   "plugins": [
     ["@snowpack/plugin-babel"],
     [
-      "@snowpack/plugin-run-script",
-      {
-        "cmd": "bundle exec bridgetown build",
-        "watch": "$1 --watch"
-      }
-    ],
-    [
       "@snowpack/plugin-build-script",
       {
         "cmd": "postcss --config postcss.config.js",
@@ -19,14 +12,15 @@
   ],
   "installOptions": { "NODE_ENV": true },
   "devOptions": {
+    "clean": true,
     "open": "none",
-    "port": 4000,
-    "out": "output"
+    "port": 4002,
+    "out": "output/_frontend_"
   },
   "buildOptions": {
     "baseUrl": "/",
     "metaDir": "",
     "bundle": false
   },
-  "mount": { "frontend": "/_frontend_", "output": "/" }
+  "mount": { "frontend": "/" }
 }
