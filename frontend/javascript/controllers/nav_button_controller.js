@@ -1,9 +1,7 @@
 import { Controller } from "stimulus";
 
 export default class NavButtonController extends Controller {
-  static get targets() {
-    return ["iconHide", "iconShow", "content", "wrapper"];
-  }
+  static targets = ["iconHide", "iconShow", "content", "wrapper"];
 
   toggle() {
     this.toggleIcon();
