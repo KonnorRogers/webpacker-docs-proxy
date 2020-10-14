@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "BRIDGETOWN_ENV=production NODE_ENV=production bundle exec bridgetown build && snowpack build",
-    "start": "snowpack dev & bundle exec bridgetown serve"
+    "start": "BRIDGETOWN_ENV=development bundle exec bridgetown serve & snowpack dev"
   },
   "devDependencies": {},
   "dependencies": {

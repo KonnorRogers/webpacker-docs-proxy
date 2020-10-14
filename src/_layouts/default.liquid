@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    {% render "head", metadata: site.metadata, title: page.title %}
+    {% render "head", metadata: site.metadata, title: page.title, environment: bridgetown.environment %}
   </head>
   <body class="{{ page.layout }} {{ page.page_class }}">
     {% render "github_icon", github_url: page.github_url %}

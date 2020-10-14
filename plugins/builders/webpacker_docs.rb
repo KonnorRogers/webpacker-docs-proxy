@@ -1,6 +1,6 @@
 require "base64"
 class WebpackerDocs < SiteBuilder
-  def connection(headers: {}, parse_json: true)
+ def connection(headers: {}, parse_json: true)
     retry_options = {
       max: 2,
       interval: 0.05,

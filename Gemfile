@@ -17,3 +17,4 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 # Happy Bridgetowning!
 
 gem "bridgetown", "~> 0.17.1"
+gem "rouge", git: "https://github.com/ParamagicDev/rouge/tree/feat/add-docker-alias"
