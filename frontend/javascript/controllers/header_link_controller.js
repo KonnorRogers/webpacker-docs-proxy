@@ -3,6 +3,7 @@ import { Controller } from "stimulus";
 export default class extends Controller {
   connect() {
     document.addEventListener("turbolinks:render", this.wrapHeaders.bind(this));
+    document.addEventListener("turbolinks:load", this.wrapHeaders.bind(this));
     document.addEventListener("DOMContentLoaded", this.wrapHeaders.bind(this));
   }
 
