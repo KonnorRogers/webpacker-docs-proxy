@@ -3,10 +3,14 @@ import { Controller } from "stimulus"
 export default class extends Controller {
   connect() {
     document.addEventListener("turbolinks:render", this.fixDocumentLinks)
+    document.addEventListener("turbolinks:load", this.fixDocumentLinks)
+    document.addEventListener("DOMContentLoaded", this.fixDocumentLinks)
   }
 
   disconnect() {
     document.removeEventListener("turbolinks:render", this.fixDocumentLinks)
+    document.removeEventListener("turbolinks:load", this.fixDocumentLinks)
+    document.removeEventListener("DOMContentLoaded", this.fixDocumentLinks)
   }
 
  fixDocumentLinks() {
@@ -16,7 +20,7 @@ export default class extends Controller {
      if (anchor.href.startsWith("#")) {
        return
      }
-     
+
      if (!anchor.href.startsWith(window.location.origin)) {
        anchor.rel = "nofollow noopener noreferrer"
        anchor.target = "_blank"
