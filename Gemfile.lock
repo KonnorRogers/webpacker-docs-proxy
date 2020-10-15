@@ -1,5 +1,7 @@
-PATH
-  remote: ../rouge
+GIT
+  remote: https://github.com/ParamagicDev/rouge.git
+  revision: 9eb03adcffd7c01d2b6ef893e47c6ec8619f8bf0
+  branch: feat/add-docker-alias
   specs:
     rouge (3.24.0)
 
