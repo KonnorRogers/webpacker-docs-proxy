@@ -33,9 +33,11 @@ class WebpackerDocs < SiteBuilder
 
       doc "index.md" do
         layout "home"
+        collection "gh_docs"
         title page_title
         github_url git_url
         content body
+        permalink "/"
       end
     end
 

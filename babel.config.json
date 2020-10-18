@@ -14,7 +14,8 @@
     [
       "@babel/plugin-proposal-decorators",
       {
-        "decoratorsBeforeExport": true
+        "decoratorsBeforeExport": true,
+        "legacy": true
       }
     ],
     [

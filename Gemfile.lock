@@ -47,6 +47,8 @@ GEM
       tilt (~> 2.0)
     bridgetown-paginate (0.17.1)
       bridgetown-core (= 0.17.1)
+    bridgetown-quick-search (1.0.3)
+      bridgetown (>= 0.15.0.beta1, < 2.0)
     colorator (1.1.0)
     concurrent-ruby (1.1.7)
     erubi (1.9.0)
@@ -97,6 +99,7 @@ PLATFORMS
 
 DEPENDENCIES
   bridgetown (~> 0.17.1)
+  bridgetown-quick-search (~> 1.0)
   rouge!
 
 BUNDLED WITH

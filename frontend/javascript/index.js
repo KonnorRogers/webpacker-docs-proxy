@@ -1,6 +1,9 @@
 import "../styles/tailwind.css"
 import "../styles/dracula.css"
 import "../styles/index.css"
+
+import "bridgetown-quick-search"
+
 import Turbolinks from "turbolinks"
 import { Application } from "stimulus"
 import NavButtonController from "./controllers/nav_button_controller.js";
