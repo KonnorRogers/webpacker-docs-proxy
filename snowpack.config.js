@@ -8,14 +8,12 @@ const plugins = [
       output: [".css"],
     },
   ],
-  // [
-  //   "snowpack-plugin-rollup-bundle",
-  //   {
-  //     emitHtmlFiles: true,
-  //     preserveSourceFiles: true,
-  //     entrypoints: "output/_frontend_/javascript/index.js",
-  //   },
-  // ],
+  [
+    "snowpack-plugin-rollup-bundle",
+    {
+      entrypoints: "output/_frontend_/javascript/index.js",
+    },
+  ],
 ];
 const installOptions = { NODE_ENV: true };
 
@@ -23,16 +21,15 @@ const devOptions = {
   clean: true,
   open: "none",
   port: 4002,
-  out: "output",
+  out: "output/_frontend_",
 };
 const buildOptions = {
-  baseUrl: "/",
+  baseUrl: "/_frontend_",
   metaDir: "",
   bundle: true,
 };
 const mount = {
-  frontend: "/_frontend_",
-  output: "/",
+  frontend: "/"
 };
 
 module.exports = {
