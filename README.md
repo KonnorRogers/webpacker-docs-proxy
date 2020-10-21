@@ -9,7 +9,7 @@ A more functional and navigatable Webpacker docs
 ```bash
 git clone
 cd webpacker-docs-proxy
-bundle install && yarn install
+bundle install && npm install
 ```
 
 Create a `.env` file and add an `GITHUB_API_TOKEN` variable.
