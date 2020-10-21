@@ -24,7 +24,7 @@ export GITHUB_API_TOKEN="1234"
 Finally run:
 
 ```bash
-source .env && yarn start
+source .env && npm run start
 ```
 
 and then navigate to `localhost:4000` to view your site.
