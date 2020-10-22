@@ -56,8 +56,12 @@ code > span {
   margin-bottom: 3rem;
 }
 
-main {
+main,
+.nav-search {
   padding: 0.2rem 1rem;
+}
+
+main {
   margin: 0 1rem;
 }
 
@@ -137,8 +141,14 @@ ul > li {
     @apply overflow-x-hidden;
   }
 
-  main {
+  main,
+  .nav-search {
     max-width: 48rem;
+  }
+
+  bridgetown-search-results::part(inner) {
+  /* Adjust the popup contents wrapper */
+    /* transform: translateX(-15%); */
   }
 }
 
@@ -146,4 +156,30 @@ ul > li {
   main {
     @apply ml-4 mr-auto;
   }
+
 }
+
+@screen lg {
+  .nav-search {
+    margin: 0 auto 0 18rem;
+  }
+}
+
+bridgetown-search-form {
+  width: 100%;
+}
+
+bridgetown-search-results {
+  --link-color: #805ad5;
+  --divider-color: #e6e1d7;
+  --text-color: #3e3f3a;
+  /* --border-radius: ; */
+  /* --border-corner-radius: ; */
+}
+
+
+bridgetown-search-results::part(inner) {
+  z-index: 20;
+  background: white;
+}
+

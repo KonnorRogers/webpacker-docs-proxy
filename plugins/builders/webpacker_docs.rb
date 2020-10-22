@@ -37,6 +37,8 @@ class WebpackerDocs < SiteBuilder
         title page_title
         github_url git_url
         content body
+        slug "README"
+        permalink "/index"
       end
     end
 
