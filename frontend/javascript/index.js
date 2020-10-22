@@ -2,7 +2,7 @@ import "../styles/tailwind.css"
 import "../styles/dracula.css"
 import "../styles/index.css"
 
-import 'https://cdn.skypack.dev/bridgetown-quick-search'
+import 'https://cdn.skypack.dev/bridgetown-quick-search/dist'
 
 import Turbolinks from "turbolinks"
 import { Application } from "stimulus"
