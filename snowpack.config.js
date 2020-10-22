@@ -1,5 +1,5 @@
 const path = require("path")
-
+const babel = require("@rollup/plugin-babel")
 const plugins = [
   ["@snowpack/plugin-babel"],
   [
@@ -13,15 +13,15 @@ const plugins = [
 ];
 const installOptions = {
   NODE_ENV: true,
-  // rollup: {
-  //   plugins: [
-  //     babel({
-  //       babelHelpers: "bundled",
-  //       include: "node_modules/bridgetown-quick-search/**/*",
-  //       configFile: path.resolve(__dirname, "babel.config.json"),
-  //     }),
-  //   ],
-  // },
+   rollup: {
+     plugins: [
+       babel({
+         babelHelpers: "bundled",
+         include: "node_modules/bridgetown-quick-search/**/*",
+         configFile: path.resolve(__dirname, "babel.config.json"),
+       }),
+     ],
+   },
 };
 const devOptions = {
   clean: true,
