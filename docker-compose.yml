@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  web:
+    command: "npm run build"
+
+  volumes:
+    .:/app
+    node_modules:/app/node_modules
+
+volumes:
+  node_modules:
