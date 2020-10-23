@@ -8,7 +8,7 @@ const plugins = [
     [
       "@snowpack/plugin-run-script",
       {
-        "cmd": `yarn babel --config-file ./babel.config.json --filename $FILE`,
+        "cmd": `babel --config-file ./babel.config.json --filename $FILE`,
         "watch": "$1 --watch",
         "input": [".js"],
         "output": [".js"]
@@ -17,7 +17,7 @@ const plugins = [
   [
     "@snowpack/plugin-build-script",
     {
-      cmd: "yarn postcss --config postcss.config.js",
+      cmd: "postcss --config postcss.config.js",
       input: [".css"],
       output: [".css"],
     },
