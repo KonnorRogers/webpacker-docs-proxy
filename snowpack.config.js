@@ -1,5 +1,9 @@
 const path = require("path")
 // const babel = require("@rollup/plugin-babel").default
+const install = [
+  "bridgetown-quick-search"
+]
+
 const plugins = [
   ["@snowpack/plugin-babel"],
   [
@@ -37,6 +41,7 @@ const buildOptions = {
 const mount = { frontend: "/" };
 
 module.exports = {
+  install: install,
   plugins: plugins,
   devOptions,
   buildOptions,
