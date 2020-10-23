@@ -1,6 +1,6 @@
 {
  "exclude": "/node_modules\/(?!(bridgetown-quick-search))/",
- "include": "node_modules/bridgetown-quick-search)",
+ "include": ["node_modules/bridgetown-quick-search", "src/**/*"],
   "presets": [
     [
       "@babel/preset-env",
