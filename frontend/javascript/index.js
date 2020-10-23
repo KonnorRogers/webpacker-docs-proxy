@@ -2,7 +2,7 @@ import "../styles/tailwind.css"
 import "../styles/dracula.css"
 import "../styles/index.css"
 
-import BridgetownQuickSearch from 'bridgetown-quick-search'
+import BridgetownQuickSearch from 'bridgetown-quick-search/dist'
 
 import Turbolinks from "turbolinks"
 import { Application } from "stimulus"
