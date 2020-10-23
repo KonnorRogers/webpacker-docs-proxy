@@ -5,7 +5,15 @@ const install = [
 ]
 
 const plugins = [
-  ["@snowpack/plugin-babel"],
+    [
+      "@snowpack/plugin-run-script",
+      {
+        "cmd": `babel --config-file ./babel.config.json --filename $FILE`,
+        "watch": "$1 --watch",
+        "input": [".js"],
+        "output": [".js"]
+      }
+    ],
   [
     "@snowpack/plugin-build-script",
     {
