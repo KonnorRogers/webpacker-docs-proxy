@@ -1,5 +1,6 @@
 {
-  "exclude": "!./node_modules/bridgetown-quick-search",
+ "exclude": "/node_modules\/(?!(bridgetown-quick-search))/",
+ "include": "node_modules/bridgetown-quick-search)",
   "presets": [
     [
       "@babel/preset-env",
