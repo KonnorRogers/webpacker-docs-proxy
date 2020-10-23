@@ -1,7 +1,7 @@
 const path = require("path")
 // const babel = require("@rollup/plugin-babel").default
 const install = [
-  "bridgetown-quick-search"
+  // "bridgetown-quick-search"
 ]
 
 const plugins = [
