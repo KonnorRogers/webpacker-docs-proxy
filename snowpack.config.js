@@ -1,7 +1,7 @@
 const path = require("path")
 // const babel = require("@rollup/plugin-babel").default
 const plugins = [
- // ["@snowpack/plugin-babel"],
+  ["@snowpack/plugin-babel"],
   [
     "@snowpack/plugin-build-script",
     {
