@@ -148,7 +148,7 @@ ul > li {
 
   bridgetown-search-results::part(inner) {
   /* Adjust the popup contents wrapper */
-    /* transform: translateX(-15%); */
+    transform: translateX(17%);
   }
 }
 
