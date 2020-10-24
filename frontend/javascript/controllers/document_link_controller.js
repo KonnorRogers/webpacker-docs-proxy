@@ -19,7 +19,7 @@ export default class extends Controller {
         return;
       }
 
-      const mdFileRegex = /\.md(#\w*)?$/
+      const mdFileRegex = /\.md(#[\w\s]*)?$/
       if (
         anchor.href.startsWith(window.location.origin) &&
         mdFileRegex.test(anchor.href)
