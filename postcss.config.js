@@ -1,9 +1,6 @@
 const purgecss = require('@fullhuman/postcss-purgecss')({
   content: [
-    './src/**/*.html',
-    './src/**/*.liquid',
-    './src/**/*.md',
-    './frontend/javascript/**/*.js'
+    './output/**/*.html',
   ],
   output: './output/_bridgetown/static/css',
   defaultExtractor: content => {
