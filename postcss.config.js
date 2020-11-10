@@ -6,7 +6,6 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
 './src/**/*.html',
 './src/**/*.liquid',
   ],
-  output: './output/_bridgetown/static/css',
   defaultExtractor: content => {
     const broadMatches = content.match(/[^<>"'`\s]*[^<>"'`\s:]/g) || []
     const innerMatches = content.match(/[^<>"'`\s.()]*[^<>"'`\s.():]/g) || []
