@@ -1,12 +1,7 @@
 module.exports = {
   future: {
     removeDeprecatedGapUtilities: true,
-    purgeLayersByDefault: true
-  },
-  purge: {
-    layers: ["all"],
-    mode: "layers",
-    content: ["./output/**/*.html"],
+    purgeLayersByDefault: false
   },
   theme: {
     extend: {},
